@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\taskmanager\\backend\\services.taskapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|solutionrelative:services.taskapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\taskmanager\\backend\\services.taskapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|solutionrelative:services.taskapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\taskmanager\\backend\\services.taskapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|solutionrelative:services.taskapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\taskmanager\\backend\\services.taskapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|solutionrelative:services.taskapi\\controllers\\taskcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\taskmanager\\backend\\services.taskapi\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|solutionrelative:services.taskapi\\models\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|c:\\users\\ahuevo nice\\desktop\\taskmanager\\backend\\services.taskapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C019319B-D5E1-4B5D-A355-CE6F4E011603}|services.TaskAPI\\services.TaskAPI.csproj|solutionrelative:services.taskapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +30,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "services.TaskAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\appsettings.json",
+              "RelativeToolTip": "services.TaskAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T18:52:04.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "services.TaskAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "services.TaskAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T18:51:00.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\Program.cs",
               "RelativeDocumentMoniker": "services.TaskAPI\\Program.cs",
               "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\Program.cs",
               "RelativeToolTip": "services.TaskAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T18:16:32.82Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TaskController.cs",
               "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\Controllers\\TaskController.cs",
               "RelativeDocumentMoniker": "services.TaskAPI\\Controllers\\TaskController.cs",
               "ToolTip": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\Controllers\\TaskController.cs",
               "RelativeToolTip": "services.TaskAPI\\Controllers\\TaskController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-10T18:15:39.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Task.cs",
               "DocumentMoniker": "C:\\Users\\ahuevo nice\\Desktop\\TaskManager\\backend\\services.TaskAPI\\Models\\Task.cs",
               "RelativeDocumentMoniker": "services.TaskAPI\\Models\\Task.cs",

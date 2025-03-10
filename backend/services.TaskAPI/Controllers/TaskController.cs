@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using services.TaskAPI.Models;
+using services.TaskAPI.Data;
 using System.Collections.Generic;
 using System.Linq;
 using TaskModel = services.TaskAPI.Models.Task;
@@ -9,18 +11,23 @@ namespace services.TaskAPI.Controllers
     [ApiController]
     public class TaskController : ControllerBase
     {
-        private static List<TaskModel> tasks = new List<TaskModel>();
+        private readonly AppDbContext _context;
+
+        public TaskController(AppDbContext context)
+        {
+            _context = context;
+        }
 
         [HttpGet]
         public ActionResult<IEnumerable<TaskModel>> GetTasks()
         {
-            return Ok(tasks);
+            return Ok(_context.Tasks.ToList());
         }
 
         [HttpGet("{id}")]
         public ActionResult<TaskModel> GetTask(int id)
         {
-            var task = tasks.FirstOrDefault(t => t.Id == id);
+            var task = _context.Tasks.Find(id);
             if (task == null)
             {
                 return NotFound();
@@ -31,15 +38,15 @@ namespace services.TaskAPI.Controllers
         [HttpPost]
         public ActionResult<TaskModel> CreateTask(TaskModel task)
         {
-            task.Id = tasks.Count > 0 ? tasks.Max(t => t.Id) + 1 : 1;
-            tasks.Add(task);
+            _context.Tasks.Add(task);
+            _context.SaveChanges();
             return CreatedAtAction(nameof(GetTask), new { id = task.Id }, task);
         }
 
         [HttpPut("{id}")]
         public IActionResult UpdateTask(int id, TaskModel updatedTask)
         {
-            var task = tasks.FirstOrDefault(t => t.Id == id);
+            var task = _context.Tasks.Find(id);
             if (task == null)
             {
                 return NotFound();
@@ -47,18 +54,20 @@ namespace services.TaskAPI.Controllers
             task.Title = updatedTask.Title;
             task.Description = updatedTask.Description;
             task.Completed = updatedTask.Completed;
+            _context.SaveChanges();
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public IActionResult DeleteTask(int id)
         {
-            var task = tasks.FirstOrDefault(t => t.Id == id);
+            var task = _context.Tasks.Find(id);
             if (task == null)
             {
                 return NotFound();
             }
-            tasks.Remove(task);
+            _context.Tasks.Remove(task);
+            _context.SaveChanges();
             return NoContent();
         }
     }

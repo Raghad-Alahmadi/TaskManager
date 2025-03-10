@@ -1,6 +1,18 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
-import { AppComponent } from './app/app.component';
+import { provideStore } from '@ngrx/store';
+import { provideEffects } from '@ngrx/effects';
+import { provideStoreDevtools } from '@ngrx/store-devtools';
+import { provideHttpClient, withFetch } from '@angular/common/http';
 
-bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));
+import { AppComponent } from './app/app.component';
+import { taskReducer } from './app/store/reducers/task.reducer';
+import { TaskEffects } from './app/store/effects/task.effects';
+
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideHttpClient(withFetch()),
+    provideStore({ tasks: taskReducer }),
+    provideEffects(TaskEffects),
+    provideStoreDevtools({ maxAge: 25 })
+  ]
+}).catch(err => console.error(err));
